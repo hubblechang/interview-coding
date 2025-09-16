@@ -21,7 +21,7 @@ public class BackTracking {
         for(int i = idx + 1; i < n; i++){
             cur.add(i);
             back_tracking(result, cur, n, k, idx + 1);
-            cur.removeLast();
+            cur.remove(cur.size() - 1);
         }
     }
 

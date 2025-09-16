@@ -55,7 +55,7 @@ public class ProducerConsumerModel {
                             Thread.currentThread().interrupt();
                         }
                     }
-                    System.out.printf("Consumer: consume number: %d in queue\n", queue.removeFirst());
+                    System.out.printf("Consumer: consume number: %d in queue\n", queue.remove(0));
                     lock.notifyAll();
                 }
             }
